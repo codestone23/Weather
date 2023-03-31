@@ -7,6 +7,7 @@ const Weather = {
     weatherBox: $(".weather-box"),
     weatherDetails: $(".weather-details"),
     error : $(".not-found"),
+
     start: function(){
         this.handleShow();
     },
