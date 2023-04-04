@@ -13,15 +13,15 @@ const Weather = {
     },
     handleShow: function(){
         this.search.addEventListener('click',()=>{
-
-            const APIKey = 'f68e56cb97171404f5884a1bcb3ae81e'
             const city = $(".search-box input").value
+            const APIKey =`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'f68e56cb97171404f5884a1bcb3ae81e'}`
 
             if(city === '') return
 
-            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+            fetch(APIKey)
                 .then(response => response.json())
                 .then(json =>{
+                    console.log(json)
 
                     if(json.cod === '404'){
                         this.container.style.height = '400px'
