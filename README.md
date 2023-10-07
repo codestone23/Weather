@@ -16,7 +16,7 @@ To use this weather application, simply enter your location in the search box an
 
 ## More
  
-- Weather link: https://openweathermap.org/
+- Weather link (api): https://openweathermap.org/
 - Icon link: https://fontawesome.com/icons
 
 ## Contact
